@@ -1,15 +1,16 @@
 #include<stdio.h>
 
 int main(){
-	float celsius= 16, fahrenheit=86;
-	printf("temperatura en celcius %f\n",celsius);
-	fahrenheit= celsius*(9/5.0)+32;
-	printf("tempertura en fahrenheit %f\n",fahrenheit);
-	printf("\n");
+	float a,b,c,d; 
+	printf("temperatura en celcius \n");
+	scanf("%f", &a);
+	printf("temperatura en farenheith \n");
+	scanf("%f", &b);
+	c= a*9/5+32;
+	d= (b-32)*5/9;
+	printf("celcius a farenheith %f\n",c);
+	printf("farenheith a celcius %f\n",d);
 	
-	printf("fahrenheit %f\n",fahrenheit);
-	celsius=(fahrenheit-32)*5/9;
-	printf("celcius %f\n",celsius);
 	
 	return 0;
 }
